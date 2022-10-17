@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<title>Flight Search</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div>
+        <h2>Border Around Table</h2>
+        <p>The w3-border class adds a border around the table.</p>
+    </div>
+    <div>
+        <form class="block radio">
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">Round-trip</label>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">One way</label>
+            </form>
+    </div>
+    <div>
+        <form class="flight-form block">
+            <div class="form-field">
+                <label>From</label>
+                <input class="form-input" type="text" id="origin" name="origin" value="Your origin">
+
+                <label for="text">To</label>
+                <input type="text" id="destination" name="destination" value="Your destination">
+
+                <label>Depart</label>
+                <input class="form-input" type="text" id="departure-date" name="departure-date" value="Your dep date">
+
+                <label>Return</label>
+                <input class="form-input" type="text" id="return-date" name="return-date" value="Your return date">
+
+                <label>Adults</label>
+                <input class="form-input" type="text" id="adults" name="adults" value="Adults">
+            </div>
+            <div class="form-field">
+                <input type="submit" class="button" value="Search">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

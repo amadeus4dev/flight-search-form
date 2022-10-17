@@ -1,0 +1,28 @@
+.flight-form {
+    text-align: center;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+
+.radio {
+    color: #FFFFFF;
+}
+
+.block {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: center;
+    width: 80%;
+    background-color: #01132C;
+}
+
+.button {
+    width: 20%;
+    height: 50px;
+    color: #FFFFFF;
+    background-color: #00887D;
+}
+
+.form-input {
+    color: gray;
+}
