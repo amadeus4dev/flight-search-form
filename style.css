@@ -1,28 +1,58 @@
-.flight-form {
-    text-align: center;
-    border-radius: 4px;
-    color: #FFFFFF;
-}
+body {
+    font-size: 0.875rem; /* 14px */
+  }
+   
+ .form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    width: 100px;
+    text-align: right;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  
+  input[type="text"],
+  input[type="date"] {
+    padding: 10px;
+    font-size: 14px;
+  }
 
-.radio {
-    color: #FFFFFF;
-}
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #0050A0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="date"] {
+    position: relative;
+  }
+  
+  input[type="date"]:before {
+    content: attr(placeholder);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    color: rgba(0, 0, 0, 0.65);
+    pointer-events: none;
+    line-height: 1.5;
+    padding: 10px 0.5rem 0 0.5rem;
+  }
+  
+  input[type="date"]:focus:before,
+  input[type="date"]:not([value=""]):before
+  {
+    display: none;
+  }
 
-.block {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    float: center;
-    width: 80%;
-    background-color: #01132C;
-}
-
-.button {
-    width: 20%;
-    height: 50px;
-    color: #FFFFFF;
-    background-color: #00887D;
-}
-
-.form-input {
-    color: gray;
-}
+  .custom-card {
+    background-color: #F7F7F9;
+  }
