@@ -9,7 +9,7 @@
 
 <body>
     <div class="container">
-        <div class="card custom-bg w-75 p-4">
+        <div class="card custom-bg w-75 p-4 d-flex">
             <div class="row">
                 <div class="pb-3 h3 text-center">Flight Search</div>
             </div>
@@ -40,7 +40,7 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-md align-items-start flex-column">
-                        <label for="adults" class="d-inline-flex">Adults</label>
+                        <label for="adults" class="d-inline-flex col-auto">Adults <span class="sublabel"> 12+ </span></label>
                         <select class="form-select" id="adults">
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -49,7 +49,7 @@
                         </select>
                     </div>
                     <div class="form-group col-md align-items-start flex-column">
-                        <label class="d-inline-flex" for="children">Children</label>
+                        <label class="d-inline-flex col-auto" for="children">Children <span class="sublabel"> 2-11 </span></label>
                         <select class="form-select" id="children">
                             <option value="0">0</option>
                             <option value="1">1</option>
@@ -59,7 +59,7 @@
                         </select>
                     </div>
                     <div class="form-group col-md align-items-start flex-column">
-                        <label for="infants" class="d-inline-flex">Infants</label>
+                        <label for="infants" class="d-inline-flex col-auto">Infants <span class="sublabel"> less than 2</span></label>
                         <select class="form-select" id="infants">
                             <option value="0">0</option>
                             <option value="1">1</option>
@@ -72,8 +72,8 @@
                 <div class="row">
                     <div class="form-group d-inline-flex justify-content-center">
                         <div class="form-check form-switch d-flex">
-                            <input class="form-check-input" type="checkbox" id="directFlights">
-                            <label class="form-check-label d-inline-flex" for="directFlights">Direct flights</label>
+                            <input class="form-check-input align-self-center" type="checkbox" id="directFlights">
+                            <label class="form-check-label d-inline-flex align-self-center" for="directFlights">Direct flights</label>
                         </div>
                         <div class="form-group col-md align-items-start flex-column col-md-4">
                             <label for="infants" class="d-inline-flex">Cabin</label>
@@ -91,10 +91,8 @@
                         <button type="submit" class="btn btn-primary">Search</button>
                     </div>
                 </div>
-
             </form>
         </div>
     </div>
 </body>
-
 </html>
