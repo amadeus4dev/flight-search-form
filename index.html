@@ -5,6 +5,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
     <div class="container">
@@ -16,22 +17,22 @@
                 <div class="row">
                     <div class="form-group col-md align-items-start flex-column">
                         <label for="origin" class="d-inline-flex">From</label>
-                        <input type="text" placeholder="City or Airport" class="form-control" id="origin"
-                            name="origin" required>
+                        <input type="text" placeholder="City or Airport" class="form-control" id="origin" name="origin"
+                            required>
                     </div>
                     <div class="form-group col-md align-items-start flex-column">
-                        <label for="origin" class="d-inline-flex col-md-2 justify-content-start">To</label>
-                        <input type="text" placeholder="City or Airport" class="form-control" id="origin" name="origin"
+                        <label for="depart" class="d-inline-flex">To</label>
+                        <input type="text" placeholder="City or Airport" class="form-control" id="depart" name="depart"
                             required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-md align-items-start flex-column">
-                        <label for="departure-date"  class=" d-inline-flex col-md-1 justify-content-start">Depart</label>
+                        <label for="departure-date" class=" d-inline-flex">Depart</label>
                         <input type="date" class="form-control" id="departure-date" name="departure-date" required>
                     </div>
                     <div class="form-group col-md align-items-start flex-column">
-                        <label for="return-date" class="d-inline-flex col-md-2 justify-content-start" >Return</label>
+                        <label for="return-date" class="d-inline-flex">Return</label>
                         <input type="date" placeholder="One way" value=""
                             onChange="this.setAttribute('value', this.value)" class="form-control" id="return-date"
                             name="return-date">
@@ -39,7 +40,7 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-md align-items-start flex-column">
-                        <label for="adults" class="d-inline-flex col-md-2 justify-content-start">Adults</label>
+                        <label for="adults" class="d-inline-flex">Adults</label>
                         <select class="form-select" id="adults">
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -48,7 +49,7 @@
                         </select>
                     </div>
                     <div class="form-group col-md align-items-start flex-column">
-                        <label class="d-inline-flex col-md-2 justify-content-start" for="children">Children</label>
+                        <label class="d-inline-flex" for="children">Children</label>
                         <select class="form-select" id="children">
                             <option value="0">0</option>
                             <option value="1">1</option>
@@ -58,7 +59,7 @@
                         </select>
                     </div>
                     <div class="form-group col-md align-items-start flex-column">
-                        <label for="infants"  class="d-inline-flex col-md-2 justify-content-start">Infants</label>
+                        <label for="infants" class="d-inline-flex">Infants</label>
                         <select class="form-select" id="infants">
                             <option value="0">0</option>
                             <option value="1">1</option>
@@ -68,28 +69,28 @@
                         </select>
                     </div>
                 </div>
-                    <div class="row">
-                        <div class="form-group d-inline-flex justify-content-end">
-                            <div class="form-check form-switch d-flex right ">
-                                <input class="form-check-input" type="checkbox" id="directFlights">
-                                <label class="form-check-label d-inline-flex " for="directFlights">Direct flights</label>
-                            </div>
-                            <div class="form-group col-md align-items-start flex-column col-md-4">
-                                <label for="infants"  class="d-inline-flex col-md-2 justify-content-start">Cabin</label>
-                                <select class="form-select" id="cabin">
-                                    <option value="ECONOMY">Economy</option>
-                                    <option value="PREMIUM_ECONOMY">Premium Economy</option>
-                                    <option value="BUSINESS">Business</option>
-                                    <option value="FIRST">First</option>
-                                </select>
-                            </div>
-                    </div>
-                    </div>
-                    <div class="row">
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary">Search</button>
+                <div class="row">
+                    <div class="form-group d-inline-flex justify-content-center">
+                        <div class="form-check form-switch d-flex">
+                            <input class="form-check-input" type="checkbox" id="directFlights">
+                            <label class="form-check-label d-inline-flex" for="directFlights">Direct flights</label>
+                        </div>
+                        <div class="form-group col-md align-items-start flex-column col-md-4">
+                            <label for="infants" class="d-inline-flex">Cabin</label>
+                            <select class="form-select" id="cabin">
+                                <option value="ECONOMY">Economy</option>
+                                <option value="PREMIUM_ECONOMY">Premium Economy</option>
+                                <option value="BUSINESS">Business</option>
+                                <option value="FIRST">First</option>
+                            </select>
                         </div>
                     </div>
+                </div>
+                <div class="row">
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
 
             </form>
         </div>
