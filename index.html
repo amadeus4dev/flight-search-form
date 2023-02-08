@@ -24,13 +24,14 @@
                     <div class="form-group col-md align-items-start flex-column">
                         <label for="depart" class="d-inline-flex">To</label>
                         <input type="text" placeholder="City or Airport" class="form-control" id="depart" name="depart"
-                            required>
+                            onkeydown="return false" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-md align-items-start flex-column">
                         <label for="departure-date" class=" d-inline-flex">Depart</label>
-                        <input type="date" class="form-control" id="departure-date" name="departure-date" required>
+                        <input type="date" class="form-control" id="departure-date" name="departure-date"
+                            onkeydown="return false" required>
                     </div>
                     <div class="form-group col-md align-items-start flex-column">
                         <label for="return-date" class="d-inline-flex">Return</label>
@@ -86,17 +87,17 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group d-inline-flex justify-content-start">
-                        <div class="form-group col-lg-6 align-items-start flex-column col-md-4">
-                            <label for="cabin" class="d-inline-flex">Cabin</label>
-                            <select class="form-select" id="cabin">
-                                <option value="ECONOMY">Economy</option>
-                                <option value="PREMIUM_ECONOMY">Premium Economy</option>
-                                <option value="BUSINESS">Business</option>
-                                <option value="FIRST">First</option>
-                            </select>
-                        </div>
-                        <div class="form-check form-switch d-flex m-3">
+                    <div class="form-group col-lg-6 align-items-start flex-column">
+                        <label for="cabin" class="d-inline-flex">Cabin</label>
+                        <select class="form-select" id="cabin">
+                            <option value="ECONOMY">Economy</option>
+                            <option value="PREMIUM_ECONOMY">Premium Economy</option>
+                            <option value="BUSINESS">Business</option>
+                            <option value="FIRST">First</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-lg-6 align-items-start flex-column pt-lg-4">
+                        <div class="form-check form-switch">
                             <input class="form-check-input align-self-center" type="checkbox" id="directFlights">
                             <label class="form-check-label d-inline-flex align-self-center" for="directFlights">Direct
                                 flights</label>
@@ -113,4 +114,5 @@
         </div>
     </div>
 </body>
+
 </html>
