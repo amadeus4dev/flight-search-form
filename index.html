@@ -6,6 +6,7 @@
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="script.js"></script>
 
 <body>
     <div class="container">
@@ -13,7 +14,7 @@
             <div class="row">
                 <div class="pb-3 h3 text-left">Flight Search</div>
             </div>
-            <form id="flight-form">
+            <form id="flight-form" onsubmit="return validateForm()">
                 <div class="row">
                     <div class="form-group col-md align-items-start flex-column">
                         <label for="origin" class="d-inline-flex">From</label>
@@ -40,39 +41,54 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-lg-3 align-items-start flex-column">
-                        <label for="adults" class="d-inline-flex col-auto">Adults <span class="sublabel"> 12+ </span></label>
+                        <label for="adults" class="d-inline-flex col-auto">Adults <span class="sublabel"> 12+
+                            </span></label>
                         <select class="form-select" id="adults">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
-                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
                         </select>
                     </div>
                     <div class="form-group col-lg-3 align-items-start flex-column">
-                        <label class="d-inline-flex col-auto" for="children">Children <span class="sublabel"> 2-11 </span></label>
+                        <label for="children" class="d-inline-flex col-auto">Children <span class="sublabel"> 2-11
+                            </span></label>
                         <select class="form-select" id="children">
                             <option value="0">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
-                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
                         </select>
                     </div>
                     <div class="form-group col-lg-3 align-items-start flex-column">
-                        <label for="infants" class="d-inline-flex col-auto">Infants <span class="sublabel"> less than 2</span></label>
+                        <label for="infants" class="d-inline-flex col-auto">Infants <span class="sublabel"> less than
+                                2</span></label>
                         <select class="form-select" id="infants">
                             <option value="0">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
-                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
                         </select>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group d-inline-flex justify-content-start">
                         <div class="form-group col-lg-6 align-items-start flex-column col-md-4">
-                            <label for="infants" class="d-inline-flex">Cabin</label>
+                            <label for="cabin" class="d-inline-flex">Cabin</label>
                             <select class="form-select" id="cabin">
                                 <option value="ECONOMY">Economy</option>
                                 <option value="PREMIUM_ECONOMY">Premium Economy</option>
@@ -82,14 +98,16 @@
                         </div>
                         <div class="form-check form-switch d-flex m-3">
                             <input class="form-check-input align-self-center" type="checkbox" id="directFlights">
-                            <label class="form-check-label d-inline-flex align-self-center" for="directFlights">Direct flights</label>
+                            <label class="form-check-label d-inline-flex align-self-center" for="directFlights">Direct
+                                flights</label>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="text-left">
+                    <div class="text-left col-auto">
                         <button type="submit" class="btn btn-primary">Search flights</button>
                     </div>
+                    <div id="infantsError" class="error text-danger"></div>
                 </div>
             </form>
         </div>
