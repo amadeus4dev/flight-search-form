@@ -44,10 +44,11 @@
                     <div class="form-group col-lg-3 align-items-start flex-column">
                         <label for="adults" class="d-inline-flex col-auto">Adults <span class="sublabel"> 12+
                             </span></label>
-                        <select class="form-select" id="adults">
+                        <select class="form-select" id="adults" onchange="javascript: dynamicDropDown(this.options[this.selectedIndex].value);">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
+                            <option value="4">4</option>
                             <option value="5">5</option>
                             <option value="6">6</option>
                             <option value="7">7</option>
@@ -60,14 +61,6 @@
                             </span></label>
                         <select class="form-select" id="children">
                             <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
                         </select>
                     </div>
                     <div class="form-group col-lg-3 align-items-start flex-column">
@@ -75,14 +68,6 @@
                                 2</span></label>
                         <select class="form-select" id="infants">
                             <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
                         </select>
                     </div>
                 </div>
