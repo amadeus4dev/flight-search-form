@@ -15,3 +15,19 @@ function validateForm() {
   infantsError.innerHTML = "";
   return true;
 }
+
+function dynamicdropdown(listindex)
+{
+
+  document.getElementById("infants").length = 0;
+  document.getElementById("children").length = 0;
+
+  for (let i = 0; i < Number(listindex) + 1; i++){
+    document.getElementById("infants").options[i]=new Option(i.toString(),i);
+  }
+
+  for (let i = 0; i < 9 - Number(listindex) + 1; i++){
+    document.getElementById("children").options[i]=new Option(i.toString(),i);
+  }
+
+}
