@@ -1,16 +1,3 @@
-function validateForm() {
-  var adults = document.getElementById("adults").value;
-  var children = document.getElementById("children").value;
-  var infants = document.getElementById("infants").value;
-  var infantsError = document.getElementById("infantsError");
-  if ((parseInt(children) + parseInt(infants) + parseInt(adults)) > 18) {
-    infantsError.innerHTML = "Number of passengers can't exceed 18";
-    return false;
-  }
-  infantsError.innerHTML = "";
-  return true;
-}
-
 function dynamicDropDown(listIndex) {
 
   document.getElementById("infants").length = 0;
